@@ -1,5 +1,5 @@
 
-# Docker Monitoring Stack with Grafana, Prometheus, Loki, and Alertmanager
+# Docker Monitoring Stack with Grafana, Prometheus, Loki and Alertmanager
 
 ![Monitoring Stack Banner](https://img.shields.io/badge/Monitoring-Stack-blue?style=flat-square)  
 [![Docker](https://img.shields.io/badge/Docker-%230db7ed.svg?style=flat&logo=docker&logoColor=white)](https://www.docker.com/) [![Grafana](https://img.shields.io/badge/Grafana-%23F46800.svg?style=flat&logo=grafana&logoColor=white)](https://grafana.com/) [![Prometheus](https://img.shields.io/badge/Prometheus-%23E6522C.svg?style=flat&logo=prometheus&logoColor=white)](https://prometheus.io/)

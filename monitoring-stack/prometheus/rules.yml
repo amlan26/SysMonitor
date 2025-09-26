@@ -1,0 +1,19 @@
+groups:
+  - name: example
+    rules:
+      - alert: HighContainerCPU
+        expr: rate(container_cpu_usage_seconds_total{container_name=~"url-fe|url-be|postgres-database"}[5m]) * 100 > 80
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: High CPU usage on {{ $labels.container_name }}
+          description: CPU usage for {{ $labels.container_name }} is above 80% for 5 minutes.
+      - alert: ContainerDown
+        expr: up{job="cadvisor"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: Container {{ $labels.container }} is down
+          description: The container has been down for more than 1 minute.

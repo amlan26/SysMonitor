@@ -1,5 +1,5 @@
 
-# Docker Monitoring Stack with Grafana, Prometheus, Loki, and Alertmanager
+# Docker Monitoring Stack with Grafana, Prometheus, Loki and Alertmanager
 
 ![Monitoring Stack Banner](https://img.shields.io/badge/Monitoring-Stack-blue?style=flat-square)  
 [![Docker](https://img.shields.io/badge/Docker-%230db7ed.svg?style=flat&logo=docker&logoColor=white)](https://www.docker.com/) [![Grafana](https://img.shields.io/badge/Grafana-%23F46800.svg?style=flat&logo=grafana&logoColor=white)](https://grafana.com/) [![Prometheus](https://img.shields.io/badge/Prometheus-%23E6522C.svg?style=flat&logo=prometheus&logoColor=white)](https://prometheus.io/)
@@ -95,10 +95,10 @@ monitoring-stack/
    You should see services like `grafana`, `prometheus`, `loki`, etc.
 
 3. **Access Services**:
-   - Grafana: http://<server-ip>:3000 (login: `admin` / `your_secure_password`)
-   - Prometheus: http://<server-ip>:9090
-   - Alertmanager: http://<server-ip>:9093
-   - Loki: http://<server-ip>:3100 (query via Grafana)
+   - Grafana: http://192.168.0.1:3000 (login: `admin` / `your_secure_password`)
+   - Prometheus: http://192.168.0.1:9090
+   - Alertmanager: http://192.168.0.1:9093
+   - Loki: http://192.168.0.1:3100 (query via Grafana)
 
 4. **View Logs and Metrics in Grafana**:
    - Go to Explore > Loki > Query: `{container_name="frontend"}` (adjust time range to "Last 48 hours" for older logs).
